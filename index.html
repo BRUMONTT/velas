@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encantos da Vela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Encantos da Vela</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#carrinho">Carrinho (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="banner" class="banner hero">
+    <div class="hero-content">
+      <h2>Velas Artesanais que Encantam</h2>
+      <p>Transforme seus ambientes com elegância, perfume e acolhimento</p>
+    </div>
+  </section>
+
+  <section id="produtos" class="secao">
+    <h2>Nossas Velas</h2>
+    <div class="produtos-container">
+      <div class="produto">
+        <div class="img-fundo"></div>
+        <h3>Vela de Lavanda</h3>
+        <p>Aroma relaxante com notas florais suaves. Ideal para o fim do dia.</p>
+        <span class="preco">R$ 39,90</span>
+        <button onclick="adicionarAoCarrinho('Vela de Lavanda', 39.90)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="produto">
+        <div class="img-fundo"></div>
+        <h3>Vela de Baunilha</h3>
+        <p>Conforto doce e envolvente com base de cera vegetal premium.</p>
+        <span class="preco">R$ 42,00</span>
+        <button onclick="adicionarAoCarrinho('Vela de Baunilha', 42.00)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="secao">
+    <h2>Sobre Nós</h2>
+    <p>Produzimos velas artesanais com ingredientes naturais e fragrâncias exclusivas. Combinamos estética, bem-estar e sustentabilidade para criar momentos únicos.</p>
+  </section>
+
+  <section id="depoimentos" class="secao">
+    <h2>Depoimentos</h2>
+    <blockquote>"As velas da Encantos da Vela transformaram meu ambiente. A qualidade é excelente!" – Mariana F.</blockquote>
+    <blockquote>"Atendimento maravilhoso e entrega rápida. Super recomendo!" – Paulo M.</blockquote>
+  </section>
+
+  <section id="faq" class="secao">
+    <h2>Perguntas Frequentes</h2>
+    <p><strong>Quanto tempo dura a vela?</strong><br>Até 40 horas de queima contínua, dependendo do uso.</p>
+    <p><strong>É vegana?</strong><br>Sim, utilizamos apenas cera vegetal e fragrâncias naturais.</p>
+  </section>
+
+  <section id="carrinho" class="secao">
+    <h2>Seu Carrinho</h2>
+    <ul id="lista-carrinho"></ul>
+    <p>Total: R$ <span id="total-carrinho">0.00</span></p>
+    <div class="botoes-carrinho">
+      <a id="finalizar-whatsapp" href="#" target="_blank" class="botao-finalizar">Finalizar pelo WhatsApp</a>
+      <a id="finalizar-stripe" href="#" target="_blank" class="botao-finalizar botao-secundario">Pagar com Cartão</a>
+    </div>
+  </section>
+
+  <section id="cadastro" class="secao">
+    <h2>Cadastre-se</h2>
+    <form id="form-cadastro" class="formulario">
+      <input type="text" name="nome" placeholder="Nome completo" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
+      <button type="submit">Cadastrar</button>
+    </form>
+  </section>
+
+  <footer id="contato" class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3>Contato</h3>
+        <p>WhatsApp: <a href="https://wa.me/5541991575259" target="_blank">(41) 99157-5259</a></p>
+        <p>Email: contato@encantosdavelas.com</p>
+      </div>
+      <div>
+        <h3>Redes Sociais</h3>
+        <p><a href="#">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <p><a href="#">Política de Privacidade</a></p>
+        <p><a href="#">Termos de Uso</a></p>
+      </div>
+    </div>
+    <p>&copy; 2025 Encantos da Vela. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
