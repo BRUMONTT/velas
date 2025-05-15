@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #2d3e50;
+  background-color: #fffaf0;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -50,7 +50,7 @@ h2 {
 }
 
 .produto {
-  background-color: #ffffff;
+  background-color: #fffaf0;
   padding: 20px;
   border-radius: 8px;
   width: 250px;
@@ -64,7 +64,7 @@ h2 {
 .produto .img-fundo {
   width: 100%;
   height: 150px;
-  background-color: #3498db; /* Fundo azul para substituir as imagens */
+  background-color: #fffaf0; /* Fundo azul para substituir as imagens */
   border-radius: 8px;
   margin-bottom: 15px;
 }
